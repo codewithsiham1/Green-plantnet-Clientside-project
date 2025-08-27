@@ -19,7 +19,7 @@ const PopularProduct = () => {
   useEffect(() => {
     const fetchPopularPlants = async () => {
       try {
-        const res = await fetch('http://localhost:5000/popular-products');
+        const res = await fetch('https://grenn-tree-plantnet-serverside-proj.vercel.app/popular-products');
         const data = await res.json();
         setPopularPlants(data); // ✅ ঠিক নাম ব্যবহার করা হয়েছে
       } catch (error) {
