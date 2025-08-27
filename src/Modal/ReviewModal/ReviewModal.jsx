@@ -12,7 +12,7 @@ const ReviewModal = ({ plantId, orderId, closeModal, refetch }) => {
     e.preventDefault();
     try {
       const review = { rating: parseInt(rating), comment, plantId, orderId };
-      const res = await axiosSecure.post("https://grenn-tree-plantnet-serverside-proj.vercel.app/review", review);
+      const res = await axiosSecure.post("https://tree-plantnet-server-side-project.vercel.app/review", review);
       if (res.data?.insertedId) {
         toast.success("Review submitted successfully!");
         closeModal();

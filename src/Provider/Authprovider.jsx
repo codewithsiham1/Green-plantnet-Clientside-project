@@ -30,7 +30,7 @@ const updateprofile = (name, photo) => {
 // logout function
 const handlelogOut=async()=>{
   try{
-    await axios.get('https://grenn-tree-plantnet-serverside-proj.vercel.app/logout',{
+    await axios.get('https://tree-plantnet-server-side-project.vercel.app/logout',{
       withCredentials:true
     });
     setuser(null)

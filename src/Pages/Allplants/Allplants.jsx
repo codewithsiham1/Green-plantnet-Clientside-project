@@ -13,7 +13,7 @@ const Allplants = () => {
   const { data: plants = [], isLoading, error } = useQuery({
     queryKey: ['allPlants'],
     queryFn: async () => {
-      const { data } = await axiosSecure.get('https://grenn-tree-plantnet-serverside-proj.vercel.app/plants');
+      const { data } = await axiosSecure.get('https://tree-plantnet-server-side-project.vercel.app/plants');
       return data;
     },
   });

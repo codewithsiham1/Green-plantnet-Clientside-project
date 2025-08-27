@@ -31,7 +31,7 @@ const ContactUs = () => {
     };
 
     try {
-      const res = await fetch("https://grenn-tree-plantnet-serverside-proj.vercel.app/contact", {
+      const res = await fetch("https://tree-plantnet-server-side-project.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
